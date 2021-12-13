@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        html {
+            background-color: rgb(226, 221, 207);
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+
+        .header {
+            background-color: #100B07;
+            width: 98%;
+            height: 62px;
+            padding: 0px;
+            border: 10px solid rgb(39, 97, 135);
+            margin-left: 3px;
+        }
+
+        #image1 {
+            width: 60px;
+            height: 60px;
+        }
+
+        a.button1 {
+            float: right;
+            display: inline-block;
+            padding: 15px 32px;
+            border: 1px solid #FFFFFF;
+            margin: 5px 10px 10px 1px;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-size: large;
+            font-weight: 350;
+            color: #FFFFFF;
+            transition: all 0.2s;
+            width: auto;
+            /* height: 42px; */
+            cursor: default;
+        }
+
+        a.button1:hover {
+            color: #000000;
+            background-color: #FFFFFF;
+        }
+
+        a.button2:hover {
+            color: #000000;
+            background-color: #FFFFFF;
+        }
+
+        .container {
+            float: center;
+            width: 95%;
+            height: 550px;
+            margin: 1.5% 2%;
+            background-color: #100B07;
+            box-shadow: 10px 10px rgb(39, 97, 135);
+        }
+
+        .box-1 {
+            float: left;
+            width: 700px;
+            height: 350px;
+            margin-top: -90px;
+        }
+
+        #head1 {
+            text-transform: uppercase;
+            font-size: 59px;
+            color: white;
+            line-height: 60px;
+            margin-left: 80px;
+            margin-top: 200px;
+
+        }
+
+        #para1 {
+            float: left;
+            color: white;
+            text-align: left;
+            margin-left: 90px;
+            margin-top: -50px;
+            line-height: 30px;
+            font-family: arial, sans-serif;
+            word-spacing: 1px;
+        }
+
+        .form{
+            margin-left: 100px;
+            margin-top: 10px;
+            float: left;
+            border: 5px solid white;
+        }
+
+        #email{
+            color: white;  
+            margin-top: -10px;
+        }
+
+	    #fname{
+            color: white;
+        }
+
+        #lname{
+            color: white;
+        }
+
+        #head3{
+            color: white;
+        }
+
+        .box-2 {
+            float: right;
+            margin-left: 160px;
+            margin-right: 150px;
+            margin-top: -200px;
+            width: 500px;
+            height: 350px;
+            background-image: url("Computer.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+
+        .container2 {
+            float: center;
+            width: 95%;
+            height: 550px;
+            margin: 2.5% 2%;
+            background-color: #100B07;
+            box-shadow: 10px 10px rgb(39, 97, 135);
+        }
+
+        .box-3 {
+            float: left;
+            margin-left: 63px;
+            margin-top: 77px;
+            width: 600px;
+            height: 350px;
+            background-image: url("gadgets.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        .box-4 {
+            float: right;
+            width: 700px;
+            height: 10px;
+            float: left;
+            margin-left: 520px;
+            margin-top: -20px;
+        }
+
+        #head2 {
+            text-transform: uppercase;
+            font-size: 59px;
+            color: white;
+            line-height: 60px;
+            margin-left: 200px;
+            margin-top: -380px;
+            margin-bottom:0px ;
+        }
+
+        a.button02 {
+            padding: 15px 32px;
+            float: left;
+            margin-left: 200px;
+            margin-top: 10px;
+            box-sizing: border-box;
+            text-decoration: none;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 350;
+            font-size: larger;
+            color: #FFFFFF;
+            transition: all 0.2s;
+            width: 200px;
+            cursor: default;
+            ;
+        }
+
+        a.button3 {
+            background-color: rgb(39, 97, 135);
+        }
+
+        a.button3:hover {
+            background-color: rgb(25, 64, 89);
+        }
+        
+        #para2 {
+            float: left;
+            margin-left: 200px;
+            color: white;
+            text-align: left;
+            margin-top: 10px;
+            font-family: arial, sans-serif;
+        }
+        
+
+
+
+
+        .container3 {
+            font-family: arial, sans-serif;
+            float: center;
+            margin-left:-10px;
+            /* margin-bottom:10px; */
+            width: 100%;
+            height: auto;
+            background-color: white;
+            padding:10px;
+            padding-left: 40px;
+            padding-bottom: 20px;
+        }
+
+        #para3{
+            color: black;
+            margin-left: 0px;
+            width: 1150px;
+            margin-top: 20px;
+            font-family: arial, sans-serif;
+        }
+
+        .table {
+            border-collapse: collapse;
+            width: 95%;
+            height: 100px;
+            text-align: left;
+            padding: 8px;
+            margin-top: -10px;
+            margin-left: 50px;
+        }
+
+        .cell{
+            text-align: left;
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+
+        .td1{
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+            cursor: default;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            padding-bottom: 10px;
+            float: left;
+            margin-left: -10px;
+            width: 100%;
+            height: 50px;
+            padding:20px;
+            background-color: #100B07;
+        }
+
+        #para4{
+            font-family: arial, sans-serif;
+            text-align: center;
+            color:white;
+            margin-top: -35px;
+        }
+
+    </style>
+</head>
+
+<body style="margin-bottom: 0px;">
+
+    <header class="header">
+        <img id="image1" src="Tech Nerd.png" alt="Logo">
+        <a href="blank" class="button1 button1">Sign Up</a>
+        <a href="blank" class="button1 button2">Sign In</a>
+    </header>
+
+    <div class="container">
+        <div class="box-1">
+            <h2 id="head1">
+                You want it.
+                <br> We Got It.
+                </h4>
+                <h5 id="para1"> Laptops, phones, tablets and more available for delivery and pickup. <br> With all
+                    your favorite brands.
+            </h2>
+
+            <form class="form">
+                <label id="email" for="email"> Email address:</label><br>
+                <input type="text" id="imputemail" name="email" value=""><br>
+                <label id="fname" for="fname">First name:</label><br>
+                <input type="text" id="imputfname" name="fname" value=""><br>
+                <label id="lname" for="lname">Last name:</label><br>
+                <input type="text" id="imputlname" name="lname" value=""><br>
+                <input id="submit" type="submit" value="Submit" style="margin-top: 10px;">
+            </form>
+        </div>
+        <div class="box-2">
+            <!-- Second Image -->
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="box-3">
+            <!-- Second Image -->
+        </div>
+        <div class="box-4">
+            <h2 id="head2">
+                <br> When ever
+                <br> And
+                <br> Where ever
+                <br> You Need.
+            </h2>
+                <a href="blank" class=" button02 button3">Shop Now</a>
+                <p id="para2">*Sign up for 20% off your first purchase.</p>
+        </div>
+    </div>
+
+    <div class="container3">
+        <p id="para3"> <span> About Us </span> <br> We provide a variety of tech products with both door-to-door delivery and pickup options for our customers convenience. Our online shop takes all the stress of shopping away. Also, we have a number of stores around the US, you can visit "Cities Near You" to find the closes to you. All you might need is a click away with our online shop so you can shop from home.</p>
+        <hr style="margin-right: 50px;width: 1260px;margin-left: 50px; margin-bottom: -10px; margin-top: 30px;">
+        <br>
+            <h3 style="margin-left: 20px;">Cities Near You</h3>
+            <table class="table">
+                <tr>
+                    <td class="td1"><a href="_blank" target="_blank">Atlanta</a></td>
+                    <td class="td1"><a href="_blank" target="_blank">Dallas</a></td>
+                    <td class="td1"><a href="_blank" target="_blank">New York</a></td>
+                    <td class="td1"><a href="_blank" target="_blank">San Diego</a></td>
+                </tr>
+                <tr>
+                    <td class="td1"><a href="_blank" target="_blank">Austin</a></td>
+                    <td class="td1"><a href="_blank" target="_blank">Denver</a></td>
+                    <td class="td1"><a href="_blank" target="_blank">Palm Springs</a></td>
+                    <td class="td1"><a href="_blank" target="_blank">Seattle</a></td>
+                </tr>
+                <tr>
+                    <td class="td1"><a href="_blank" target="_blank">Baltimore</a></td>
+                    <td class="td1"><a href="_blank" target="_blank">Las Vegas</a></td>
+                    <td class="td1"><a href="_blank" target="_blank">Houston</a></td>
+                    <td class="td1"><a href="_blank" target="_blank">Tampa Bay</a></td>
+                </tr>
+
+                <tr>
+                    <td class="td1"><a href="_blank" target="_blank">Boston</a></td>
+                    <td class="td1"><a href="_blank" target="_blank">Los Angeles</a></td>
+                    <td class="td1"><a href="_blank" target="_blank">Phoenix</a></td>
+                    <td class="td1"><a href="_blank" target="_blank">Tucson</a></td>
+                </tr>
+                <tr>
+                    <td class="td1"><a href="_blank" target="_blank">Chicago</a></td>
+                    <td class="td1"><a href="_blank" target="_blank">Miami</a></td>
+                    <td class="td1"><a href="_blank" target="_blank">Pittsburgh</a></td>
+                    <td class="td1"><a href="_blank" target="_blank">Washington D.C.</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <footer class="footer">
+            <div class="footercolumn" >
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+            <p id="para4">&copy; by TechNerds.</p>
+        </footer>
+
+</body>
+</html>
